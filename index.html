@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela-login</title>
+    <link rel="stylesheet" href="/pasta.css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="tag">
+          <span></span>
+        </div>
+        <div id="msgError"></div>
+        <div class="label-float">
+          <input type="text" id="email" autocomplete="off" required />
+          <label id="labelEmailLogin" for="email">E-mail</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="senha" autocomplete="off" required />
+          <label id="labelSenhaLogin" for="senha">Senha</label>
+        </div>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+
+        <div class="divButton">
+          <button type="button" onclick="entrar()">Entrar</button>
+        </div>
+
+        <div class="link">
+          <p>
+            Faça seu
+            <a href="http://127.0.0.1:5500/index2.html">Cadastro</a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <script src="pasta.script/script.js"></script>
+  </body>
+</html>
