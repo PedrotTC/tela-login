@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(tela-cadastro.png);
+}
+
+form {
+  margin: auto;
+  margin-top: 200px;
+  padding: 10px 0px;
+}
+
+img {
+  margin-left: 100px;
+  transition: margin-top 0.5s;
+}
+img:hover {
+  margin-top: 10px;
+}
+.label-float {
+  margin-bottom: 0px;
+}
+
+.container {
+  background-color: rgba(128, 0, 128, 0.534);
+  margin: auto;
+  width: 250px;
+  padding: 30px;
+  box-shadow: 2px 2px 5px gainsboro;
+  z-index: 1;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.tag {
+  position: relative;
+  top: -30px;
+  left: 30px;
+  text-align: right;
+  padding: 10px 0px;
+}
+
+span {
+  padding: 10px 15px;
+  background-color: #e53a9f;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 30px;
+}
+
+input {
+  background-color: transparent;
+  width: 100%;
+  outline: 0;
+  padding: 7px;
+  color: white;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  opacity: 0.7;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -50px;
+  font-size: 12px;
+  color: white;
+  opacity: 1;
+}
+
+input:focus,
+input:valid {
+  border-bottom: 1px solid white;
+}
+
+label {
+  position: relative;
+  top: -20px;
+  color: gainsboro;
+  font-family: sans-serif;
+  font-size: 14px;
+  transition: top 0.5s, font-size 0.5s;
+  opacity: 0.7;
+}
+.divButton {
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 10px 25px;
+  color: #e53a9f;
+  font-family: sans-serif;
+  font: bold 10pt Arial;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: gainsboro;
+}
+
+.link {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.541);
+}
+
+.link p {
+  font-family: sans-serif;
+  font-size: 12pt;
+  color: #333;
+}
+
+.link a {
+  color: #5d1db6;
+  padding: 5px;
+}
+
+.link a:hover {
+  color: #333;
+}
+
+.fa-eye {
+  position: relative;
+  top: -45px;
+  left: 250px;
+  cursor: pointer;
+  color: grey;
+}
+
+.fa-eye:hover {
+  color: white;
+}
+
+#msgError {
+  text-align: center;
+  background-color: rgb(255, 174, 174);
+  padding: 10px;
+  margin-bottom: 25px;
+  color: red;
+  border-radius: 2px;
+
+  font-family: sans-serif;
+  font-size: 8pt;
+  display: none;
+}
+
+#msgSucesso {
+  text-align: center;
+  background-color: rgb(203, 253, 203);
+  padding: 10px;
+  margin-bottom: 25px;
+  color: green;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 8pt;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    margin: auto;
+    margin-top: 70px;
+    padding: 10px 0px;
+  }
+}
