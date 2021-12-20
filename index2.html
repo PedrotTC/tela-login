@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+    <link rel="stylesheet" href="pasta.css/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="tag">
+          <span></span>
+        </div>
+        <div id="msgError"></div>
+        <div id="msgSucesso"></div>
+        <div class="label-float">
+          <input type="text" id="nome" autocomplete="off" required />
+          <label id="labelNome" for="nome">Nome</label>
+        </div>
+
+        <div class="label-float">
+          <input type="text" id="email" autocomplete="off" required />
+          <label for="email" id="labelEmail">E-mail</label>
+        </div>
+
+        <div class="label-float">
+          <input
+            type="password"
+            id="inputVerSenha"
+            autocomplete="off"
+            required
+          />
+          <label id="labelSenha" for="senha">Senha</label>
+        </div>
+        <i class="fa fa-eye" id="verSenha" aria-hidden="true"></i>
+
+        <div class="label-float">
+          <input
+            type="password"
+            id="inputConfimeSenha"
+            autocomplete="off"
+            required
+          />
+          <label for="inputconfimarSenha" id="labelConfirme"
+            >Confirma senha</label
+          >
+        </div>
+        <i class="fa fa-eye" id="ConfirmeSenha" aria-hidden="true"></i>
+
+        <div class="divButton">
+          <button type="button" onclick="cadastrar()">Cadastrar</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="pasta.script/script2.js"></script>
+  </body>
+</html>
